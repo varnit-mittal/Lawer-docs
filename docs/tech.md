@@ -3,10 +3,10 @@
 ## Tech stack
 <ul>
 
-<li>flutter</li>
-<li>firebase</li>
-<li>Django-REST</li>
-<li>Gemini</li>
+<li><b>Flutter</b></li>
+<li><b>Firebase</b></li>
+<li><b>Django-REST</b></li>
+<li><b>Gemini</b></li>
 </ul>
 
 ## Usage of tech stack
@@ -22,7 +22,7 @@ The database was initially in the form of json files, to implement searching, <b
 <b>Firebase</b> was used to store the scraped data, and user data, like the user identification and the file system for a particular user. Firebase is used for the OTP verification process, in case a user doesn't have an account, firebase creates one for the user. Firebase provided a seamless interface to apply server side features
 </p>
 <p>
-For the frontend interface <b>flutter</b> framework was used with a wide variety of packages to handle the features that the app offers to users. Some of these packages and their uses were:-
+For the frontend interface <b>Flutter</b> framework was used with a wide variety of packages to handle the features that the app offers to users. Some of these packages and their uses were:-
 <ul>
     <li><i>file_picker: picking files from external storage</i></li>
     <li><i>flutter_widget_from_html: convert string containing html code to flutter widgets</i></li>
@@ -36,11 +36,11 @@ Flutter was preferred as flutter provides a relatively fast development process 
 ## Iteration and Challenges
 The frontend started with Figma designs and seamlessly transitioned into <b>Flutter</b> development, leveraging its rapid development capabilities for fast paced page creation. During implementation of certain functionalities like external storage file selection, or rendering html strings of legal precedents, we would often encounter the problem of using the right package with the right versions. Flutter goes through upgrades very frequently which makes it hard for a developer to keep up, which also deprecates a lot of online resources even dating a couple of years back. The frontend team often had to refer to the documentation and cross checking the compatibility of packages before using them in the project, this slowed down the process but made the work much more streamlined. 
 <p>
-A major challenge the team faced was making a file system inside our application, this required collaboration from both the teams working on the frontend and the backend side of the application. Together we figured out a solution in which we store the directory path as a string, and manipulated it whenever a frontend event that changed directories was called, we then shared this variable with the backend to keep track of it so that we don't loose when popping states. 
+A major challenge the team faced was making a <b>File System</b> inside our application, this required collaboration from both the teams working on the frontend and the backend side of the application. Together we figured out a solution in which we store the directory path as a string, and manipulated it whenever a frontend event that changed directories was called, we then shared this variable with the backend to keep track of it so that we don't loose when popping states. 
 </p>
 
 The backend team started with the creation of databases with web scraping different websites, it took some time to find the right source that was open to developers. We end up using the [indian kanoon website](https://indiankanoon.org/) for making out database. Then the team proceeded to transfer everything to firebase cloud storage. One of the major challenges encountered by the team was providing the file to the front end interface in the form of an html string to be rendered. Initially, sending the json data byte by byte proved to be a failure, with the reference of some documentation, the team figured out that sending the data through octet streams solved the problem. 
 
 <p>
-Some other small challenges faced by the team were tuning the gemini model with the right initialization parameters, it took a lot of experimentation and testing to come up with the right values. Initially, there was a security concerns of the API key being exposed, the team constructed the env file to patch that error.
+Some other small challenges faced by the team were tuning the <b>Gemini</b> model with the right initialization parameters, it took a lot of experimentation and testing to come up with the right values. Initially, there was a security concerns of the API key being exposed, the team constructed the env file to patch that error.
 </p>

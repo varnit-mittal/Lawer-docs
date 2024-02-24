@@ -1,7 +1,8 @@
-site_name: My Docs
+site_name: Lawer
 nav:
-  - home: index.md
-  - feedback and scalability: impact.md
-  - technological info: tech.md
+  - Home: index.md
+  - Feedback and Scalability: impact.md
+  - Tech stack and info: tech.md
+  - Code Insight: codeexp.md
 
 theme: readthedocs

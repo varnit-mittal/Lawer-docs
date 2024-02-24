@@ -5,9 +5,9 @@ For the git repository visit [lawer](https://github.com/varnit-mittal/lawer/).
 ## Description
 
 Legal jargon and poorly designed databases often create significant barriers for citizens seeking legal information. Our team addressed this issue by creating a solution that makes law resources easily searchable and understandable. Lawer offers situational based searching so that the legal databases can be navigated using simple language. 
-<p>Lawer is an Android application designed to revolutionize the way both citizens and law practitioners interact with legal resources. For citizens, it offers intuitive tools to search and understand legal precedents, demystifying complex language. Law practitioners also benefit from advanced precedent searching capabilities, streamlining research and reducing the risk of missing critical insights. Additionally, Lawer's integrated file management system provides practitioners with a secure and organized way to handle case files.</p>
+<p><b>Lawer</b> is an Android application designed to revolutionize the way both citizens and law practitioners interact with legal resources. For citizens, it offers intuitive tools to search and understand legal precedents, demystifying complex language. Law practitioners also benefit from advanced precedent searching capabilities, streamlining research and reducing the risk of missing critical insights. Additionally, Lawer's integrated file management system provides practitioners with a secure and organized way to handle case files.</p>
 <p>
-Our solution targets the UN sustainable goal of "Peace, Justice and Strong Institutions". Our solution covers various targets in SDG 16.
+Our solution targets the UN sustainable goal of <b>"Peace, Justice and Strong Institutions".</b> Our solution covers various targets in SDG 16.
 <ul>
 <li>
 16.2(End abuse, exploitation, trafficking and all forms of violence against and torture of children):<br>
