@@ -34,7 +34,7 @@
 <p>
 <b>Impact</b><br>
 <ul>
-<li><b>Improved Accuracy:</b> Parameter optimization significantly enhanced the accuracy of category mapping, ensuring correct classifications within the system.</li><br>
+<li><b>Improved Accuracy:</b> Parameter optimization significantly enhanced the accuracy of category mapping, ensuring correct classifications within the system.</li>
 <li><b>Enhanced User Experience:</b> The correction of mapping errors streamlined the user experience, eliminating confusion and frustration caused by incorrect classifications.</li>
 </ul>
 </p>
@@ -47,8 +47,20 @@
 Lawer currently operates upon Indian law database with the api of the [indiankanoon.org](https://indiankanoon.org/). This application has a huge scalability and our team is soon gonna start on some of them. Some possible extensions are:- 
 <ul>
 
-    <li>Extension towards the legal databases of other nations</li>
-    <li>Multi language support</li>
-    <li>Multi platform support</li>
+<li>
+Extension towards the legal databases of other nations, this sort of extension would require access to the the central judicial databases of other nations. 
+</li>
+<li>Multi language support, this will promote inclusivity and help lawer reach a larger audience. This extension will be easily achievable with the help of <a href="https://cloud.google.com/translate/docs/reference/rest">cloud translation api</a>.</li>
+<li>
+Multi platform support. The application is currently supported on android only, our team aims to provide multiplatform support like ios and web. Flutter's multiplatform supprt will be a huge help in this, with a little restructuring of files and referencing the documentation, we will soon make lawer available on every screen
+</li>
 </ul>
-Extending overseas demands access to the central government judicial databases, this will not only enable us to remove a lot of third party issues, but also handle a bigger set of queries and situations. Some extensions can be there provide extra features such as a legal helper that advises a course of action in certain situations. We want lawer to be in the hands of every citizen, resulting in a world with a much higher legal awareness. 
+The scalability factors mentioned above focus more on increasing the audience base, our team have planned many other extensions making the application more functionality rich. Some of these ideas are 
+<ul>
+<li>
+<b>Law of the week:</b> We want to empower our users by providing easy-to-understand explanations of laws that affect their everyday lives. This extension will promote engagement to our application and legal awarenes of the general public will increase. 
+</li>
+<li>
+<b>AI legal assistant: </b>It often happens that civilians are stuck in situations where approaching a legal advisor is difficult. Our AI legal assistant would be just what the user needs in such a situation. We can use the gemini AI model for this functionality, with the amazing natural laguage processing of the model, we can get this ready. With some training, our AI model can provide the legally correct sequence of actions for an individual, this will be a handy tool for many.
+</li>
+</ul>

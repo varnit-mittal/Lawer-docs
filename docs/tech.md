@@ -3,10 +3,10 @@
 ## Tech stack
 <ul>
 
-    <li>flutter</li>
-    <li>firebase</li>
-    <li>Django-REST</li>
-    <li>Gemini</li>
+<li>flutter</li>
+<li>firebase</li>
+<li>Django-REST</li>
+<li>Gemini</li>
 </ul>
 
 ## Usage of tech stack

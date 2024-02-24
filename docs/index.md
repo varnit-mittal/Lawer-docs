@@ -7,7 +7,25 @@ For the git repository visit [lawer](https://github.com/varnit-mittal/lawer/).
 Legal jargon and poorly designed databases often create significant barriers for citizens seeking legal information. Our team addressed this issue by creating a solution that makes law resources easily searchable and understandable. Lawer offers situational based searching so that the legal databases can be navigated using simple language. 
 <p>Lawer is an Android application designed to revolutionize the way both citizens and law practitioners interact with legal resources. For citizens, it offers intuitive tools to search and understand legal precedents, demystifying complex language. Law practitioners also benefit from advanced precedent searching capabilities, streamlining research and reducing the risk of missing critical insights. Additionally, Lawer's integrated file management system provides practitioners with a secure and organized way to handle case files.</p>
 <p>
-Our solution targets the UN sustainable goal of "Peace, Justice and Strong Institutions". Our solution is a sustainable one improving on target 16.3 and 16.10 in SDG 16. Our solution proves to be a huge impact on the lack of legal awareness in citizens. Our solution would allow citizens to seek legal aid on a click on their phone. 
+Our solution targets the UN sustainable goal of "Peace, Justice and Strong Institutions". Our solution covers various targets in SDG 16.
+<ul>
+<li>
+16.2(End abuse, exploitation, trafficking and all forms of violence against and torture of children):<br>
+Our app provides education, which can significantly increase awareness and contribute towards the end of abuse
+</li>
+<li>
+16.3(Promote the rule of law at the national and international levels and ensure equal access to justice for all):<br>
+Our application will ensure public is aware of their legal rights and cannot be exploited by wrongdoers by feeding them lies 
+</li>
+<li>
+16.5(Substantially reduce corruption and bribery in all their forms):<br>
+With the easy access to legal information, general public will be more prone to take a stand against corruption.
+</li>
+<li>
+16.10(Ensure public access to information and protect fundamental freedoms, in accordance with national legislation and international agreements):<br>
+The Right to Information, commonly understood as the “right to access information held by public bodies” in international parlance is recognised by UNESCO as a fundamental freedom and a key pillar to building inclusive societies. Legal jargon witholds the right to information in a disguised manner and our application ensures that it doesn't happen. 
+</li>
+</ul>
 </p>
 
 ## Installation and run
@@ -23,4 +41,5 @@ This command will resolve all the dependencies required for the project, and ins
 ```sh
 flutter run
 ```
+People with android studio might run the project with the run main.dart button, it's okay to do so, but for running the project the first time, it is advised to run the command as flutter run can prompt the user to setup some things like multidex support if they haven't been set already.
 

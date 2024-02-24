@@ -3,3 +3,5 @@ nav:
   - home: index.md
   - feedback and scalability: impact.md
   - technological info: tech.md
+
+theme: readthedocs
