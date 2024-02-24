@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Feedback and Scalability - Lawer</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Feedback and Scalability";
+        var mkdocs_page_input_path = "impact.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Lawer
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Feedback and Scalability</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tech/">Tech stack and info</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../codeexp/">Code Insight</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Lawer</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Feedback and Scalability</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="feedback">Feedback</h1>
+<ol>
+<li>
+<p>
+<b>Issue:</b>  Limited Accessibility of Precedent Search for Laypersons
+</p>
+<p>
+<b>Description:</b> Traditional keyword-based precedent search methods relied heavily on legal jargon, posing a significant barrier for those without specialized training.
+</p>
+<p>
+<b>Resolution:</b>  Inspired by user feedback, the team undertook the following steps:
+<ul>
+<li><b>Solution Concept:</b> Develop a situation-based precedent search function to enhance accessibility.</li>
+<li><b>AI Implementation:</b> Integrate Gemini AI to enable natural language processing, allowing users to describe their legal situations in plain terms.</li>
+</ul>
+</p>
+<p>
+<b>Impact</b><br>
+<ul>
+<li><b>Improved User Experience:</b> Laypersons can intuitively find relevant precedents without specialized knowledge, leading to a smoother and more empowering experience.<br></li>
+<li><b>Increased Accessibility:</b> The application becomes a valuable resource for a wider audience, bridging the gap between legal knowledge and everyday understanding.</li>
+</ul>
+</p>
+</li>
+
+<li>
+<p>
+<b>Issue:</b> Incorrect Category Mapping Due to Suboptimal Gemini Model Parameters
+</p>
+<p>
+<b>Description:</b> Initial parameter settings for the Gemini model resulted in the misclassification of items within certain categories. This error was not detected during the internal development and testing phases.
+</p>
+<b>Resolution:</b>  Following user feedback highlighting the misclassifications, the team conducted a thorough analysis.  Key parameters, such as temperature, were adjusted to optimize the Gemini model's performance.
+<p>
+<b>Impact</b><br>
+<ul>
+<li><b>Improved Accuracy:</b> Parameter optimization significantly enhanced the accuracy of category mapping, ensuring correct classifications within the system.</li>
+<li><b>Enhanced User Experience:</b> The correction of mapping errors streamlined the user experience, eliminating confusion and frustration caused by incorrect classifications.</li>
+</ul>
+</p>
+</li>
+</ol>
+<p>Users were delighted about the new searching capabilities of our application and lawer did not let down. We had users test out search based upon different types of criminal situations and lawer provided them relevant legal precedants. </p>
+
+<h1 id="scalability">Scalability</h1>
+<p>Lawer currently operates upon Indian law database with the api of the <a href="https://indiankanoon.org/">indiankanoon.org</a>. This application has a huge scalability and our team is soon gonna start on some of them. Some possible extensions are:- </p>
+<ul>
+
+<li>
+Extension towards the legal databases of other nations, this sort of extension would require access to the the central judicial databases of other nations. 
+</li>
+<li>Multi language support, this will promote inclusivity and help lawer reach a larger audience. This extension will be easily achievable with the help of <a href="https://cloud.google.com/translate/docs/reference/rest">cloud translation api</a>.</li>
+<li>
+Multi platform support. The application is currently supported on android only, our team aims to provide multiplatform support like ios and web. Flutter's multiplatform supprt will be a huge help in this, with a little restructuring of files and referencing the documentation, we will soon make lawer available on every screen
+</li>
+</ul>
+<p>The scalability factors mentioned above focus more on increasing the audience base, our team have planned many other extensions making the application more functionality rich. Some of these ideas are </p>
+<ul>
+<li>
+<b>Law of the week:</b> We want to empower our users by providing easy-to-understand explanations of laws that affect their everyday lives. This extension will promote engagement to our application and legal awarenes of the general public will increase. 
+</li>
+<li>
+<b>AI legal assistant: </b>It often happens that civilians are stuck in situations where approaching a legal advisor is difficult. Our AI legal assistant would be just what the user needs in such a situation. We can use the gemini AI model for this functionality, with the amazing natural laguage processing of the model, we can get this ready. With some training, our AI model can provide the legally correct sequence of actions for an individual, this will be a handy tool for many.
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tech/" class="btn btn-neutral float-right" title="Tech stack and info">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../tech/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

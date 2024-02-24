@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Tech stack and info - Lawer</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tech stack and info";
+        var mkdocs_page_input_path = "tech.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Lawer
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../impact/">Feedback and Scalability</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Tech stack and info</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#tech-stack">Tech stack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#usage-of-tech-stack">Usage of tech stack</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#iteration-and-challenges">Iteration and Challenges</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../codeexp/">Code Insight</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Lawer</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Tech stack and info</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="components">Components</h1>
+<h2 id="tech-stack">Tech stack</h2>
+<ul>
+
+<li><b>Flutter</b></li>
+<li><b>Firebase</b></li>
+<li><b>Django-REST</b></li>
+<li><b>Gemini</b></li>
+</ul>
+
+<h2 id="usage-of-tech-stack">Usage of tech stack</h2>
+<p>
+We used github for our project workflow, frontend work was started with design choices like colour pallets and the responsiveness of the app. We used figma for designing different pages, it's vector design tools helped us create a wide variety of pages
+</p>
+<p><b>Django-REST</b> framework was used to create the API for all the communication between the client and the server, it was used for all requests and responses. It was also used to modify the data in a more readable form where it was necessary.
+</p>
+<p>
+The database was initially in the form of json files, to implement searching, <b>gemini</b> was used. First, it was used to map the json files to categories on which we are gonna search upon. Then we used the natural language processing of gemini to map the user prompt of a certain situation into those categories, and return the result with the most weights associated to it.
+</p>
+<p>
+<b>Firebase</b> was used to store the scraped data, and user data, like the user identification and the file system for a particular user. Firebase is used for the OTP verification process, in case a user doesn't have an account, firebase creates one for the user. Firebase provided a seamless interface to apply server side features
+</p>
+<p>
+For the frontend interface <b>Flutter</b> framework was used with a wide variety of packages to handle the features that the app offers to users. Some of these packages and their uses were:-
+<ul>
+    <li><i>file_picker: picking files from external storage</i></li>
+    <li><i>flutter_widget_from_html: convert string containing html code to flutter widgets</i></li>
+    <li><i>permission_handler: asking user for permissions to manage external storage</i></li>
+    <li><i>http: converting files from external storage into a form which can be transferred to firebase</i></li>
+
+</ul>
+Flutter was preferred as flutter provides a relatively fast development process and can is easily extensible to multiple platforms like ios and web, which is one of our future targets.
+</p>
+
+<h2 id="iteration-and-challenges">Iteration and Challenges</h2>
+<p>The frontend started with Figma designs and seamlessly transitioned into <b>Flutter</b> development, leveraging its rapid development capabilities for fast paced page creation. During implementation of certain functionalities like external storage file selection, or rendering html strings of legal precedents, we would often encounter the problem of using the right package with the right versions. Flutter goes through upgrades very frequently which makes it hard for a developer to keep up, which also deprecates a lot of online resources even dating a couple of years back. The frontend team often had to refer to the documentation and cross checking the compatibility of packages before using them in the project, this slowed down the process but made the work much more streamlined. </p>
+<p>
+A major challenge the team faced was making a <b>File System</b> inside our application, this required collaboration from both the teams working on the frontend and the backend side of the application. Together we figured out a solution in which we store the directory path as a string, and manipulated it whenever a frontend event that changed directories was called, we then shared this variable with the backend to keep track of it so that we don't loose when popping states. 
+</p>
+
+<p>The backend team started with the creation of databases with web scraping different websites, it took some time to find the right source that was open to developers. We end up using the <a href="https://indiankanoon.org/">indian kanoon website</a> for making out database. Then the team proceeded to transfer everything to firebase cloud storage. One of the major challenges encountered by the team was providing the file to the front end interface in the form of an html string to be rendered. Initially, sending the json data byte by byte proved to be a failure, with the reference of some documentation, the team figured out that sending the data through octet streams solved the problem. </p>
+<p>
+Some other small challenges faced by the team were tuning the <b>Gemini</b> model with the right initialization parameters, it took a lot of experimentation and testing to come up with the right values. Initially, there was a security concerns of the API key being exposed, the team constructed the env file to patch that error.
+</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../impact/" class="btn btn-neutral float-left" title="Feedback and Scalability"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../codeexp/" class="btn btn-neutral float-right" title="Code Insight">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../impact/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../codeexp/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
